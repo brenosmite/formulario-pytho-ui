@@ -1,0 +1,42 @@
+do  PyQt5  import   uic , QtWidgets
+
+def  funcao_principal ():
+    linha1  =  formulario . linhaEditar . texto ()
+    linha2  =  formulario . linhaEdit_2 . texto ()
+    linha3  =  formulario . linhaEdit_3 . texto ()
+
+    se  formulario . radioButton . isChecked () :
+        print ( "Categoria Eletrônica selecionada" )
+     formulario elif . radioButton_2 . isChecked () :
+        print ( "Categoria Informatica selecionada" )
+    mais :
+        print ( "Categoria Alimentos Selecionados" )
+
+    print ( "Código:" , linha1 )
+    print ( "Descricao:" , linha2 )
+    print ( "Preco" , linha3 )
+
+
+app = QtWidgets . QAplicativo ([])
+formulario = uic . loadUi ( "formulario2.ui" )
+formulário . botão de pressão . clicou . conectar ( funcao_principal )
+
+formulário . mostrar ()
+aplicativo . executivo ()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
